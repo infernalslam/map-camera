@@ -7,7 +7,7 @@
           <side-bar :addCam18="addCam18"></side-bar>
       </div>
       <div class="column">
-        <map-view :image="image" :totalCamera="totalCamera"></map-view>
+        <map-view :image="image" :totalCamera="totalCamera" :cuser="cuser"></map-view>
       </div>
     </div>
   </div>
@@ -74,7 +74,13 @@ export default {
       }
       this.totalCamera.push(lens18)
       console.log(this.totalCamera)
+    },
+    cuser (e) {
+      console.log(e)
     }
+  },
+  drop (e) {
+    console.log(e.x, e.y)
   }
 }
 </script>

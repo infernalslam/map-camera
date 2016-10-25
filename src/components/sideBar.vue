@@ -12,7 +12,7 @@
     Camera
   </p>
   <ul class="menu-list">
-    <li><a href="#">camera 18</a></li>
+    <li><a @click="addCam18()">camera 18</a></li>
     <li><a href="#">camera 30</a></li>
     <li><a href="#">camera 40</a></li>
   </ul>
@@ -28,7 +28,8 @@ export default {
   computed: {},
   mounted () {},
   methods: {},
-  components: {}
+  components: {},
+  props: ['addCam18']
 }
 </script>
 

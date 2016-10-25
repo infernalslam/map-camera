@@ -1,6 +1,8 @@
 <template lang="html">
   <div class="map">
-    <img :src="image" class="image"/>
+    <div v-for="camera in totalCamera" :style="{'background': camera.color, 'top': camera.y + 'px', 'left': camera.x + 'px', 'position': 'absolute', 'width': '30px', 'height': '30px'}">
+    </div>
+      <img :src="image" class="image"/>
   </div>
 </template>
 
@@ -13,7 +15,7 @@ export default {
   mounted () {},
   methods: {},
   components: {},
-  props: ['image']
+  props: ['image', 'totalCamera']
 }
 </script>
 
